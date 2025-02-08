@@ -1,0 +1,57 @@
+.banner {
+    position: relative; /* Importante para posicionar o texto sobre a imagem */
+    overflow: hidden; /* Garante que a imagem não vaze do container */
+    margin-bottom: 1rem;
+}
+
+.banner img {
+    width: 100%; /* A imagem ocupa toda a largura do container */
+    height: auto;  /* Mantém a proporção da imagem */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    ;
+}
+
+.banner h1, .banner p {
+    position: absolute; /* Posiciona o texto sobre a imagem */
+    top: 50%;         /* Centraliza verticalmente */
+    left: 50%;        /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o posicionamento */
+    color: white;      /* Texto branco para contrastar com a imagem */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para legibilidade */
+    font-size: 2em;     /* Tamanho do título */
+    font-weight: bold;
+    text-align: center;
+    width: 80%;        /* Limita a largura do texto */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+.banner p {
+    font-size: 1.2rem;   /* Tamanho do slogan */
+    margin-top: 2rem;  /* Espaçamento entre o título e o slogan */
+}
+
+/* Opcional: Efeito de sobreposição (overlay) */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Uma camada preta semitransparente */
+    z-index: 1; /* Garante que a sobreposição fique atrás do texto */
+}
+
+.banner h1, .banner p {
+    z-index: 2; /* Garante que o texto fique acima da sobreposição */
+}
+
+/* Estilos para telas menores (responsividade) */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 1.5em; /* Reduz o tamanho do título em telas menores */
+    }
+    .banner p {
+        font-size: 1em;   /* Reduz o tamanho do slogan em telas menores */
+    }
+}

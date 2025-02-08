@@ -1,0 +1,37 @@
+.container-main {
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.titulo {
+    color: #5cb85c;
+    border-bottom: 1px solid #5cb85c;
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    }
+
+.container-main h2 {
+    color: #045104;
+    /* Verde para remeter à natureza */
+    border-bottom: 1px solid #5cb85c;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.container-main ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.container-main strong {
+    font-weight: bold;
+}
+
+.container-main em {
+    font-style: italic;
+}
