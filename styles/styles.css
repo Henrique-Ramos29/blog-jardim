@@ -25,6 +25,15 @@
     padding-bottom: 5px;
     margin-top: 20px;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.container-main h3 {
+    color: #045104;
+    /* Verde para remeter à natureza */
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 1rem;
 }
 
 .container-main ul {

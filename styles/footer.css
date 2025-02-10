@@ -1,7 +1,13 @@
 .container-footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 30vh;
   background-color: #5cb85c;
+  overflow: hidden
+}
+
+.titulo-footer {
+  font-size: 13px;
 }

@@ -60,6 +60,7 @@
     width: 100%;
     height: 300px; /* Defina uma altura fixa para o contêiner */
     overflow: hidden; /* Evita que a imagem vaze do contêiner */
+    margin-bottom: 1rem;
 }
 
 .banner-passo-a-passo img {
